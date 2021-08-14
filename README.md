@@ -18,7 +18,7 @@ instalation:
 2. navigate into it and open the terminal
 3. ng new student-portal
 4. ng add @angular/material
-5. ng add @angular/material
+5. npm i @angular/flex-layout @angular/cdk 
 6. replace the src folder with the src folder in this repo
 7. ng serve
 8. open localhost:4200 in your browser (login details: admin & pin: admin)
