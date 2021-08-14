@@ -12,3 +12,13 @@ The purpose of this project was to
 the institution had no online option for students to view details such as their registration status, a way to submit their id card image, as well as view remaining fees to be paid without having always had to go to the training school in person (or call the office).
 
 2. practice newly learned concepts in Angular
+
+instalation:
+1. create a new project folder
+2. navigate into it and open the terminal
+3. ng new student-portal
+4. ng add @angular/material
+5. ng add @angular/material
+6. replace the src folder with the src folder in this repo
+7. ng serve
+8. open localhost:4200 in your browser (login details: admin & pin: admin)
