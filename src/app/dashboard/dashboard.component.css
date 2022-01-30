@@ -1,0 +1,171 @@
+body {
+	background-color: #f8f8f8;
+}
+
+.main-div {
+	background-color: #f8f8f8;
+	clear: both;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.mt-5 {
+	margin-top: 5px;
+}
+
+.mb-5 {
+	margin-bottom: 5px;
+}
+
+.transparent {
+	background: white;
+}
+
+.imgForm {
+	width: 100%;
+}
+
+#userImgDisplay {
+	width: 100%;
+	height: 318px;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-color: #efefef;
+	object-fit: contain;
+}
+
+#delBtn {
+	background-color: red;
+	color: white;
+}
+
+#xBtn {
+	background-color: #f21313;
+	color: white;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.fullWidth {
+	width: 100%;
+}
+
+.askDelte {
+	color: red;
+/*	display: none;*/
+	transition: all ease 0.5;
+}
+
+.clearBtn {
+	color: black;
+	background-color: none;
+}
+
+.toDisp {
+	display: block;
+	transition: all ease 0.5;
+}
+
+.red {
+	color: #ff3b2d;
+}
+
+.darkerbg {
+	color: white;
+	background-color: #005457;
+	padding: 0 15px;
+	border-radius: 5px;
+	transition: all ease 0.5s;
+}
+
+.darkerbg:hover {
+	transition: all ease 0.5s;
+	background-color: black;
+}
+
+.infoBox .mat-input-element:disabled {
+	color: white;
+	font-size: 1.2 em;
+}
+
+.infoBox .feesControl-C .red:disabled{
+	color: #f44336;
+}
+
+.infoBox .mat-form-field-wrapper {
+	width: 100% !important;
+}
+
+.infoBox {
+	background-color: #56babd;
+}
+
+#submitBtn {
+	background-color: #005457;
+	color: white;
+}
+
+#submitBtn:hover {
+	transition: all ease 0.5s;
+	background-color: black;
+}
+
+#submitLogout:hover {
+	transition: all ease 0.5s;
+	background-color: black;
+}
+
+.feesControl-L{
+	text-align: left;
+	font-weight: 500;
+	width: 40%;
+}
+
+.feesControl-R{
+	text-align: right;
+	font-weight: 500;
+	width: 60%;
+}
+
+.feesControl-C{
+	text-align: center;
+	font-weight: 500;
+}
+
+.mb-10 {
+	margin-bottom: 10px;
+}
+
+.mb-20 {
+	margin-bottom: 20px;
+}
+
+.pb-20 {
+	padding-bottom: 20px;
+}
+
+.widthModule {
+	min-width: 350px;
+}
+
+
+/*media query for desktop dashboard experience*/
+/* Uncomment below here*/
+/*
+@media only screen and (min-width:980px) {
+	.widthModule {
+		max-width: 75% !important;
+	}
+	
+	.mq-75 {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+	}
+	
+	.mq-50 {
+		width: 45%;
+	}
+}
+*/

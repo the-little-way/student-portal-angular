@@ -1,0 +1,49 @@
+<div fxLayoutAlign="center center" fxFlexFill class="main-div">
+    
+	<div class="boxed" fxLayout="column">
+		
+		<img src="../assets/logo.png" id="logoimg">
+		
+		<mat-card fxFlex="25" class="widthModule">
+			
+			<mat-toolbar fxLayoutAlign="center center" color="warn">Verification</mat-toolbar>
+			
+			<form fxLayoutAlign="stretch" fxLayout="column" class="sign">
+				
+				<mat-form-field id="registrationform" value="register" onclick="ShowHide()">
+					<mat-label>Registration No:</mat-label>
+					<input matInput placeholder="" maxlength="13" #registration>
+					<mat-hint align="end">{{registration.value.length}}/13</mat-hint>
+				</mat-form-field>
+				
+				<mat-form-field id="phone">
+					<mat-label>Phone Number</mat-label>
+					<input matInput placeholder="" type="text">
+					<mat-hint align="end">numbers only</mat-hint>
+				</mat-form-field>
+				
+				<mat-form-field id="pinform" value="register">
+					<mat-label>Create Pin:</mat-label>
+					<input matInput placeholder="" maxlength="5" #pin>
+					<mat-hint align="end">{{pin.value.length}}/5</mat-hint>
+					<mat-error align="end">error</mat-error>
+				</mat-form-field>
+				
+				<mat-form-field id="pin" value="register">
+					<mat-label>Confirm Pin:</mat-label>
+					<input matInput placeholder="" maxlength="4" matInput required>
+				</mat-form-field>
+
+				<button color="warn" mat-raised-button mat-button type="submit" id='submitNew'>Verify</button>
+
+				<div class="Slink">
+					<a routerLink="/login">Already have an account?</a>
+				</div>
+
+			</form>
+
+		</mat-card>
+		
+	</div>
+		
+</div>

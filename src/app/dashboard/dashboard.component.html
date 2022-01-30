@@ -1,0 +1,96 @@
+<mat-toolbar color="warn" fxLayoutAlign="center center" class="mat-toolbar-single-row">My Account</mat-toolbar>
+
+<div class="main-div" fxLayoutAlign="center center" >
+	
+	<mat-card fxFlex="35" class="widthModule">
+		<div class="mq-75">
+		<div class="mq-50">
+		
+			<mat-toolbar class="transparent" fxLayoutAlign="center center">Tuition Fees Information</mat-toolbar>
+
+			<mat-card class="mb-20 infoBox">
+			
+			<form fxLayout="flex row" fxLayoutAlign="center center" class="infoBox">
+				
+				<!-- student name -->
+				<mat-form-field class="fullWidth mb-10 darkerbg">
+					<div class="fullWidth" fxLayoutAlign="space-between center">
+					<input matInput disabled value="Name:" class="feesControl-L">
+					<input matInput disabled value={{Name}} class="feesControl-R" id="stuName">
+					</div>
+				</mat-form-field>
+				
+				<!-- display student ID -->
+				<mat-form-field class="fullWidth mb-10 darkerbg">
+				<div class="fullWidth" fxLayoutAlign="space-between center">
+				<input matInput disabled value="Student ID:" class="feesControl-L">
+				<input matInput disabled value={{ID}} class="feesControl-R" id="stuID">
+				</div>
+				</mat-form-field>
+				
+				<!-- display fees paid -->
+				<mat-form-field class="fullWidth mb-10 darkerbg">
+					<div class="fullWidth" fxLayoutAlign="space-between center">
+						<input matInput disabled value="Fees paid so far:" class="feesControl-L">
+						<input matInput disabled value={{Paid.toLocaleString()}} class="feesControl-R" id="feesPaid">
+					</div>
+				</mat-form-field>
+				
+				<!-- display fees remaining -->
+				<mat-form-field class="feesControl-C fullWidth mb-10 darkerbg">
+					 <div class="fullWidth" fxLayoutAlign="space-between center">
+						<input matInput disabled value="Remaining fees:" class="feesControl-L">
+						<input matInput disabled value={{(Total-Paid).toLocaleString()}} class="red feesControl-R" id="feesRem">
+					 </div>
+				</mat-form-field>
+				
+			</form>
+			
+			</mat-card>
+		
+		</div>
+		
+		<!-- passport picture uploader -->
+		<div class="mq-50">
+			<mat-toolbar class="transparent" fxLayoutAlign="center center">Upload Passport Picture</mat-toolbar>
+			
+			<mat-card class="flex-container mb-20" fxLayout="row" fxLayoutAlign="center center">
+			<mat-card-content class="fullWidth">
+				<div class=""  fxLayout="flex column">
+			
+				<button mat-mini-fab id="xBtn" (click) = "reveal()">
+					<span aria-hidden="true">×</span>
+				</button>
+			
+				<small *ngIf = "!isCollapsed" class="askDelte " id="askWarning">Are you sure you want to delete this picture?
+					<br/>
+					<button mat-button id="confirmDelete" class="clearBtn" >Yes</button>
+					<button mat-button id="cancelDelete" class="clearBtn" (click)="reveal()">No</button>
+				</small>
+				
+				<img src = "../assets/defaultimg.png" id="userImgDisplay">
+
+				<mat-form-field class="fullWidth">
+				<div fxLayout="row" fxLayoutAlign="space-between center" >
+				<button mat-raised-button type="button" id="uploadBtn" onclick="getElementById('fileInput').click()" required>Choose File</button>
+				<button mat-raised-button id="submitBtn">Submit</button> 
+				</div>
+				</mat-form-field>
+				
+				<input hidden type="file" id="fileInput"/>
+				
+				</div>
+
+			</mat-card-content>
+			</mat-card>
+		</div>
+		
+		</div>
+		
+        <div fxLayoutAlign="stretch" fxLayout="column">
+            <button color="warn" mat-raised-button mat-button type="submit"
+                id="submitLogout" class="mb-10" (click)="logout()">Logout</button>
+        </div>
+
+    </mat-card>
+</div>

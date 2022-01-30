@@ -1,0 +1,27 @@
+.main-div mat-card {
+    padding: 0px;
+}
+
+#logoimg {
+	scale: 0.8;
+}
+
+.Slink{
+    padding: 9px;
+    text-align: center;
+}
+.Slink a{
+    text-decoration: none;
+}
+
+.sign{
+    padding: 25px;
+}
+
+button[type=submit] {
+	margin-top: 15px;
+}
+
+.widthModule {
+	min-width: 350px;
+}

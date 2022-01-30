@@ -1,0 +1,46 @@
+<div fxLayoutAlign="center center" fxFlexFill class="main-div">
+    
+	<div class="boxed" fxLayout="column">
+		
+		<img src="../assets/logo.png" id="logoimg">
+		
+		<mat-card fxFlex="25" class="widthModule">
+		
+			<mat-toolbar color="warn" fxLayoutAlign="center center">Registration</mat-toolbar>
+			
+			<form fxLayoutAlign="stretch" fxLayout="column" id="form">
+				
+				<mat-form-field class="control_success">
+					<mat-label>Registration No.</mat-label>
+					<input matInput placeholder="" maxlength="13" matInput required #registration id="registration">
+					<!-- <mat-hint>Only allow numbers</mat-hint> -->
+					<mat-error>This is mandatory</mat-error>
+					<mat-hint align="end">{{registration.value.length}}/13</mat-hint>
+				</mat-form-field>
+
+				<mat-form-field class="control_error">
+					<mat-label>Pin</mat-label>
+					<input matInput placeholder="" type="password" maxlength="5" matInput required #pin id="pin">
+					<mat-hint align="end">{{pin.value.length}}/5</mat-hint>
+				</mat-form-field>
+
+				<!-- <div class="error">
+				error message
+				</div> -->
+				
+				<div class="checkboxForm" >
+					<mat-checkbox color="warn" id="checkbox">Remember me</mat-checkbox>
+				</div>
+				<button color="warn" mat-raised-button mat-button type="submit"
+					(click)="getAll(registration.value, pin.value)" id="submitOld">Login</button>
+				<div class="Rlink">
+					<a routerLink="/signup">Create an account?</a>
+				</div>
+
+			</form>
+			
+		</mat-card>
+		
+	</div>
+	
+</div>

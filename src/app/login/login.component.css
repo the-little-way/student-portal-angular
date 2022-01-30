@@ -1,0 +1,40 @@
+.main-div mat-card {
+    padding: 0px;
+}
+
+#logoimg {
+	scale: 0.8;
+}
+
+.Rlink{
+    padding: 9px;
+    text-align: center;  
+}
+.Rlink a{
+    text-decoration: none;
+}
+#form{
+    padding: 25px;
+}
+.check{
+    padding: 5px 5px;
+}
+/* .control_success input{
+    color: #2ecc71;
+} */
+/* .control_error input{
+    color: #c74c3c;
+} */
+.error{
+    color:#c74c3c;
+    /* padding: 0; */
+    visibility: hidden;
+}
+
+button[type=submit] {
+	margin-top: 15px;
+}
+
+.widthModule {
+	min-width: 350px;
+}
